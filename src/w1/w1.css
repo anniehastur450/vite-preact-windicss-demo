@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    /* hmm, might be not the best way to define font? */
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    @apply text-3xl font-bold;
+}
+
+h2 {
+    @apply text-2xl font-bold;
+}
+
+input {
+    @apply bg-light-500 px-4 py-3 w-full my-2 text-sm;
+    line-height: normal;
+}
+
+button {
+    @apply bg-orange-600 rounded-full px-12 py-3;
+    @apply text-white text-sm uppercase font-sans;
+    @apply transition-transform duration-[80ms];
+    @apply active:transform active:scale-95;
+    line-height: normal;
+}
